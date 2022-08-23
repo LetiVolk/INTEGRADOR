@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLAMPING TIME</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header>
+        <div class="logo_container">
+            <img class="logo" src="./images/logo.png" alt="logo">
+        </div>
+        <nav class="navbar">
+            <label for="toggle_menu"><i class="fas fa-bars"></i></label>
+            <input type="checkbox" id="toggle_menu">
+            <ul class="navbar_list">
+                <li> <a class="item" href="#hero"> Inicio </a> </li>
+                <li> <a class="item" href="#abaut_us"> Nosotros </a> </li>
+                <li> <a class="item" href="#destiny"> Destinos </a> </li>
+                <li> <a class="item" href="#recomendation"> Recomendaciones </a> </li>
+                <li> <a class="item" href="#contact"> Contacto </a> </li>
+            </ul>
+            <div class="search">
+                <label for="busqueda"> <i class="fas fa-search"></i> </label>
+                <input type="text" id="busqueda">
+            </div>
+            <div class="login_icono"><a href="./login.html"><i class="fa-solid fa-circle-user"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero_container" id="hero">
+            <div class="hero_txt">
+                <h1> glamourous camping</h1>
+                <span class="line"></span>
+                <p> Viví la naturaleza con estilo... </p>
+                <a href="#destiny"><button class="btn_info">CONOCÉ MÁS</button></a>
+            </div>
+        </section>
+        <section class="abaut_us_all" id="abaut_us">
+            <div class="abaut_us_container">
+                <div class="abaut_us_txt">
+                    <span class="line"></span>
+                    <p> Te brindamos toda la información necesaria para vivir la experiencia de acampar al aire libre
+                        con
+                        todo el lujo y las comodidades.</p>
+                    <div class="abaut_us_btn">
+                        <a href="#destiny"><button class="btn_info">CONOCÉ MÁS</button></a>
+                        <a href="#contact"><button class="btn_contact">CONTACTO</button></a>
+                    </div>
+                </div>
+
+                <div class="slider">
+                    <ul class="abaut_us_list">
+                        <li><img class="abaut_us_img" src="./images/abaut 5.jpg" alt="glamping"></li>
+                        <li><img class="abaut_us_img" src="./images/abaut 2.jpg" alt="glamping"></li>
+                        <li><img class="abaut_us_img" src="./images/abaut 3.jpg" alt="glamping"></li>
+                        <li><img class="abaut_us_img" src="./images/abaut 4.jpg" alt="glamping"></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="destiny_container" id="destiny">
+            <p>Elegí tu próximo destino...</p>
+            <span class="line"></span>
+            <div class="destiny_list">
+                <div class="destiny_place">
+                    <div class="place"></div>
+                    <h3>ARGENTINA</h3>
+                </div>
+                <div class="destiny_place">
+                    <div class="place"></div>
+                    <h3>AMÉRICA</h3>
+                </div>
+                <div class="destiny_place">
+                    <div class="place"></div>
+                    <h3>MUNDO</h3>
+                </div>
+            </div>
+
+
+        </section>
+        <section class="recomendation_list" id="recomendation">
+            <div class="recomendation_all">
+                <div class="recomendation_container">
+                    <img src="./images/reco1.jpg" alt="fotoJuan">
+                    <div class="recomendation_txt">
+                        <i class="fa-solid fa-quote-left"></i>
+                    <p>Gracias a la infarmación la pasé bárbaro."</p>
+                    <h5>Juan González | BAHÍA BLANCA</h5>
+                    <hr class="line_blue"></hr>
+                    </div>
+                </div>
+                <div class="recomendation_container">
+                    <img src="./images/reco2.jpg" alt="fotoJuan">
+                    <div class="recomendation_txt">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>Viví una experiencia inolvidable."</p>
+                    <h5>Sofía Vergara | COLOMBIA</h5>
+                    <hr class="line_blue"></hr>
+                    <span class="line_blue"></span>
+                </div>
+                </div>
+                <div class="recomendation_container">
+                    <img src="./images/reco3.jpg" alt="fotoJuan">
+                    <div class="recomendation_txt">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>Super recomendable, dan ganas de volver."</p>
+                    <h5>Ricardo Pérez | URUGUAY</h5>
+                    <hr class="line_blue"></hr>
+                    <span class="line_blue"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="contact">
+        <div class="contact_container">
+            <div class="contact_list">
+                <h2> REDES</h2>
+                <div class="redes_direccion">
+                    <ul class="redes">
+                        <li><a href="https://www.whatsapp.com"><i class="fa-brands fa-square-whatsapp"></i></a>
+                        </li>
+                        <li><a href="https://www.facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
+                        </li>
+                        <li><a href="https://www.instagram.com"><i class="fa-brands fa-square-instagram"></i></a>
+                        </li>
+                        <li><a href="https://www.twitter.com"><i class="fa-brands fa-square-twitter"></i></a>
+                        </li>
+                        <li><a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <h2> UBICACIÓN</h2>
+                <div class="direccion">
+                    <h3>Santo Tomé 3456</h3>
+                    <h5>1417 | Ciudad de Buenos Aires</h5>
+                    <h5>República Argentina</h5>
+                    <span class="line_end"></span>
+                </div>
+
+
+
+            </div>
+            <div class="contact_form">
+                <h2>CONTÁCTO</h2>
+                <div class="contact_info">
+                    <label for="apellido_busqueda">Apellido y nombre: </label>
+                    <input type="text" id="apellido_nombre">
+                    <label for="mail">Mail: </label>
+                    <input type="text" id="mail">
+                    <label for="consulta">Consulta:</label>
+                    <input type="text" id="consulta">
+                    <a href="#contact"><button class="btn_send">ENVIAR</button></a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="derechos">
+            <h2>TODOS LOS DERECHOS RESERVADOS | GLAMPING TIME</h2>
+        </div>
+
+    </footer>
+</body>
+
+</html>
