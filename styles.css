@@ -122,6 +122,17 @@ header {
     font-size: 40px;
 }
 
+.register_icono i {
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.register_icono i:hover {
+    color: var(--light_blue);
+    font-size: 40px;
+}
+
 #hero {
     display: flex;
     align-items: center;
@@ -304,7 +315,8 @@ h1 {
     align-items: center;
     justify-content: center;
     background-color: white;
-    padding: 60px 0px;
+    gap: 30px;
+    padding: 40px 0px;
 }
 
 #destiny p {
@@ -314,58 +326,42 @@ h1 {
     color: var(--dark_blue);
 }
 
-#destiny .line {
-    height: 2px;
-    background-color: var(--dirty_yellow);
-    width: 700px;
-    margin-top: 30px;
-}
-
 .destiny_list {
     display: flex;
+    gap: 100px;
     justify-content: center;
     align-content: center;
     align-items: center;
 }
 
 .destiny_place {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 100px;
+    gap: 50px;
     width: 200px;
+}
+
+.place {
+    background-image: url(./images/glamp1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
     cursor: pointer;
 }
 
-.destiny_list i {
-    color: var(--dark_blue);
-    font-size: 100px;
-    text-align: center;
-}
-
-.destiny_place li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: white;
-    padding: 15px;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-}
-
-.destiny_place li:hover {
-    background-color: var(--dirty_yellow);
+.place:hover {
+    background-image: url(./images/glamp2.png);
+    transform: scale(130%);
+    transition: transform 0.6s ease;
 }
 
 .destiny_place h3 {
     font-size: 18px;
     color: var(--dark_blue);
     text-align: center;
+    cursor: pointer;
     font-weight: 500;
+    padding-top: 20px;
 }
-
-
 
 #recomendation {
     display: flex;
@@ -565,15 +561,21 @@ h1 {
 
 /* login style */
 
+.login {
+    scroll-behavior: smooth;
+    scroll-padding-top: 150px;
+}
+
 .back_login {
     background-image: url(./images/glamping\ hero.jpg);
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     display: flex;
-    align-items: center;
+    align-content: center;
     justify-content: center;
-    height: 600px;
+    padding: 8rem;
 }
 
 #login {
@@ -583,6 +585,7 @@ h1 {
     background-color: var(--dark_blue);
     border-radius: 20px;
     gap: 50px;
+
 }
 
 .logo_login img {
@@ -595,7 +598,6 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 0px
 }
 
 .login_form {
@@ -676,6 +678,98 @@ h1 {
     color: white;
 }
 
+
+/* register style */
+
+.back_register {
+    background-image: url(./images/glamping\ register.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 8rem;
+}
+
+#register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dirty_yellow);
+    border-radius: 20px;
+    gap: 50px;
+}
+
+.logo_register img {
+    width: 450px;
+    padding: 30px;
+}
+
+.register_form_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    padding: 20px 0px;
+}
+
+.register_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+}
+
+.register_form label {
+    font-size: 14px;
+    color: var(--dark_blue);
+    margin: 10px 0px 5px 0px;
+}
+
+.register_form input {
+    margin-bottom: 10px;
+    border: 0px solid black;
+    outline: none;
+    border-radius: 10px;
+    width: 350px;
+    background-color: white;
+    height: 40px;
+}
+
+.register_form i {
+    color: var(--dark_blue);
+    font-size: 40px;
+}
+
+.send_register {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 15px;
+}
+
+.btn_register {
+    background-color: var(--dark_blue);
+    padding: 0px 20px;
+    border: 0px solid black;
+    outline: none;
+    color: white;
+    height: 50px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.btn_register:hover {
+    background-color: var(--light_blue);
+    color: white;
+}
+
 @media (max-width:992px) {
 
     .navbar ul {
@@ -688,11 +782,7 @@ h1 {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        opacity: 0;
-    }
-
-    #toggle_menu:checked~.navbar_list {
-        opacity: 1;
+        transform: translateX(200%);
     }
 
     .navbar label i {
@@ -711,8 +801,6 @@ h1 {
     .navbar i {
         display: block;
     }
-
-
 
     h1 {
         font-size: 80px;
@@ -733,37 +821,33 @@ h1 {
         font-size: 24px;
     }
 
-    
-        #destiny {
-        padding: 30px 0px;
+    #destiny {
+        gap: 20px;
     }
 
     #destiny p {
-        font-size: 20px;
-        font-weight: 400;
+        font-size: 24px;
     }
 
-    .destiny_place h3 {
-        font-size: 16px;
-        font-weight: 500;
-        padding-top: 10px;
-    }
-
-    #destiny .line {
-        height: 2px;
-        width: 500px;
-        margin-top: 25px;
+    .destiny_list {
+        gap: 60px;
     }
 
     .destiny_place {
-        gap: 40px;
+        gap: 20px;
+        width: 130px;
     }
 
-    .destiny_list i {
-        font-size: 70px;
+    .place {
+        height: 100px;
     }
 
-      #recomendation {
+    .destiny_place h3 {
+        font-size: 24px;
+        padding-bottom: 10px;
+    }
+
+    #recomendation {
         flex-direction: column;
         gap: 5px;
         padding: 10px 0px;
@@ -853,46 +937,95 @@ h1 {
         font-size: 14px;
     }
 
+    #toggle_menu:checked~.navbar_list {
+        transform: translateX(0%);
+    }
+
+    /* media login */
+
     .back_login {
-        height: 800px
+        padding: 6rem 8rem;
     }
 
     #login {
         flex-direction: column;
-        gap: 10px;
+        gap: 50px;
     }
 
     .logo_login img {
-        width: 300px;
+        width: 500px;
 
     }
 
     .login_form_container {
-        padding: 20px;
+        padding: 50px;
+    }
+
+    .login_form i {
+        font-size: 80px;
     }
 
     .login_form {
-        width: 300px;
+        width: 500px;
     }
 
     .login_form input {
-        width: 260px;
+        width: 460px;
     }
 
     .not_login {
-        gap: 20px;
+        gap: 30px;
     }
 
     .remember_btn label {
-        font-size: 12px;
+        font-size: 15px;
     }
 
     .not_login p {
-        font-size: 12px;
+        font-size: 15px;
     }
 
     .btn_login {
-        height: 40px;
+        height: 50px;
+    }
+
+    /*  media register */
+
+    .back_register {
+        padding: 6rem 8rem;
+    }
+
+    #register {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .logo_register img {
+        width: 500px;
+
+    }
+
+    .register_form_container {
+        padding: 50px;
+    }
+
+    .register_form i {
+        font-size: 80px;
+    }
+    .register_form {
+        width: 500px;
+    }
+
+    .register_form input {
+        width: 460px;
+    }
+
+    .send_register {
+        gap: 30px;
+    }
+
+    .btn_register {
+        height: 50px;
     }
 
 }
@@ -900,22 +1033,22 @@ h1 {
 
 @media (max-width:576px) {
 
-    .logo_container {
-        margin-left: 8%;
-    }
-
-
-    .navbar {
-        margin-right: 8%;
-    }
-
     .login_icono i {
-        font-size: 36px;
+        font-size: 40px;
+    }
+
+    .register_icono i {
+        font-size: 40px;
     }
 
     .navbar label i {
-        font-size: 36px;
+        font-size: 40px;
     }
+
+    .navbar,
+.navbar_list {
+        gap: 15px;
+} 
 
     .search {
         display: none;
@@ -953,10 +1086,6 @@ h1 {
         margin-top: 5px;
     }
 
-    #destiny {
-        padding: 30px 0px;
-    }
-
     #destiny p {
         font-size: 20px;
         font-weight: 400;
@@ -968,33 +1097,18 @@ h1 {
         padding-top: 10px;
     }
 
-    #destiny .line {
-        height: 1px;
-        width: 300px;
-        margin-top: 15px;
+    .destiny_list {
+        display: flex;
+        gap: 20px;
     }
 
     .destiny_place {
-        gap: 15px;
+        gap: 20px;
+        width: 100px;
     }
 
-    .destiny_list i {
-        font-size: 45px;
-    }
-
-    .destiny_place li {
-        padding: 15px;
-    }
-
-    .destiny_place h3 {
-        font-size: 16px;
-    }
-
-    .recomendation_container {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 20px;
+    .place {
+        height: 80px;
     }
 
     .recomendation_container i {
@@ -1044,5 +1158,60 @@ h1 {
         font-size: 10px;
     }
 
+    .logo_login img {
+        width: 300px;
+    }
+
+    .login_form_container {
+        padding: 20px;
+    }
+
+    .login_form {
+        width: 300px;
+    }
+
+    .login_form input {
+        width: 260px;
+    }
+
+    .not_login {
+        gap: 20px;
+    }
+
+    .remember_btn label {
+        font-size: 12px;
+    }
+
+    .not_login p {
+        font-size: 12px;
+    }
+
+    .btn_login {
+        height: 40px;
+    }
+
+    .logo_register img {
+        width: 300px;
+    }
+
+    .register_form_container {
+        padding: 20px;
+    }
+
+    .register_form {
+        width: 300px;
+    }
+
+    .register_form input {
+        width: 260px;
+    }
+
+    .send_register {
+        gap: 20px;
+    }
+
+    .btn_register {
+        height: 40px;
+    }
 
 }
